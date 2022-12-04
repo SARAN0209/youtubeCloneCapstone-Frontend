@@ -67,7 +67,7 @@ const SignUp = () => {
   const createUser = async () => {
     if (handleValidation) {
       try {
-        await axios.post(`/auth/signup`, {
+        await axios.post(`https://youtubeclonecapstone-backend.onrender.com/api/auth/signup`, {
           name,
           email,
           password,

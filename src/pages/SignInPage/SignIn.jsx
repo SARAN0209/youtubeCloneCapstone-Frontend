@@ -54,7 +54,7 @@ const SignIn = () => {
         e.preventDefault();
         dispatch(loginStart());
         try {
-          const res = await axios.post("auth/signin", {
+          const res = await axios.post("https://youtubeclonecapstone-backend.onrender.com/api/auth/signin", {
             email,
             password
           });
